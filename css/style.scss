@@ -1,0 +1,32 @@
+.hidden { display: none;}
+
+body {
+    padding: 30px;
+}
+
+video {
+    overflow: hidden;
+}
+
+.videoHold {
+    width: 720px;
+    height:384px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        position: absolute;
+    }
+}
+
+.controls {
+    position: absolute;
+    bottom:0;
+    right:0;
+    border: 2px solid grey;
+    background: white;
+
+    input {
+        width: 70px;
+    }
+}

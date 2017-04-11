@@ -1,0 +1,210 @@
+#floor {
+    top:300px;
+    left:0;
+    opacity: 0.5;
+    z-index: 2;
+
+    animation-name: identifier;
+    animation-duration: 7.8s;
+    animation-fill-mode: forwards;
+}
+
+#a1 {
+    top: 250px;
+    left: 100px;
+    z-index: 2
+}
+
+#a2 {
+    top: 235px;
+    left: 200px;
+    z-index: 2
+}
+
+#a3 {
+    top: 220px;
+    left: 300px;
+    z-index: 2
+}
+
+#b1 {
+    top: 315px;
+    left: 20px;
+    z-index: 2
+}
+
+#b2 {
+    top: 315px;
+    left: 120px;
+    z-index: 2
+}
+
+#b3 {
+    top: 315px;
+    left: 455px;
+    z-index: 2
+}
+
+#c1 {
+    top: 55px;
+    left: 510px;
+    z-index: 2;
+
+    animation-name: flingC1;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 1, 1);
+    animation-fill-mode: forwards;
+}
+
+#c2a {
+    top: 115px;
+    left: 510px;
+    z-index: 2;
+
+    animation-name: flingC2a;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 1, 1);
+    animation-fill-mode: forwards;
+}
+
+#c2b {
+    top: 170px;
+    left: 435px;
+    z-index: 2;
+
+    animation-name: flingC2b;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 1, 1);
+    animation-fill-mode: forwards;
+}
+
+#c2c {
+    top: 170px;
+    left: 585px;
+    z-index: 2;
+
+    animation-name: flingC2c;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 1, 1);
+    animation-fill-mode: forwards;
+}
+
+#c3 {
+    top: 230px;
+    left: 395px;
+    z-index: 2;
+
+    animation-name: flingC3;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 1, 1);
+    animation-fill-mode: forwards;
+}
+
+#c4 {
+    top: 288;
+    left: 479px;
+    z-index: 2;
+
+    animation-name: flingC4;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 1, 1);
+    animation-fill-mode: forwards;
+}
+
+#oc1 {
+    top: 115px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.75;
+
+    animation-name: rotateOc1;
+    animation-duration: 1.6s;
+}
+
+#oc2 {
+    top: 210px;
+    left: 325px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.75;
+
+    animation-name: rotateOc2;
+    animation-duration: 10.8s;
+    animation-fill-mode: forwards;
+}
+
+#d1 {
+    top: 70px;
+    left: 455px;
+}
+
+#d2 {
+    top: 140px;
+    left: 515px;
+}
+
+.textDrop {
+    animation-name: dropText;
+    animation-duration: 0.75s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 1, 1);
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes identifier {
+    from {transform: translate(0,0) rotateY(-15deg) rotateX(75deg) rotateZ(12deg);}
+    to {transform: translate(5px,15px) rotateY(-15deg) rotateX(75deg) rotateZ(12deg);}
+}
+
+@keyframes rotateOc1 {
+    from {transform: rotate(0);}
+    to {transform: translate(5px,5px) rotate(45deg);}
+}
+
+@keyframes rotateOc2 {
+    from {transform: rotate(45deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes flingC1 {
+    from {transform: translate(-240px,115px)}
+    to {transform: translate(0,0);}
+}
+
+@keyframes flingC2a {
+    from {transform: translate(-240px,55px)}
+    to {transform: translate(0,0);}
+}
+
+@keyframes flingC2b {
+    from {transform: translate(-165px,0px)}
+    to {transform: translate(0,0);}
+}
+
+@keyframes flingC2c {
+    from {transform: translate(-315px,0px)}
+    to {transform: translate(0,0);}
+}
+
+@keyframes flingC3 {
+    from {transform: translate(-110px,-55px)}
+    to {transform: translate(0,0);}
+}
+
+@keyframes flingC4 {
+    from {transform: translate(-210px,-115px)}
+    to {transform: translate(0,0);}
+}
+
+@keyframes dropText {
+    from {transform: translate(0px,0px) rotate(0deg);}
+    to {transform: translate(10px,500px) rotate(10deg);}
+}
